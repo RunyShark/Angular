@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
 })
 export class ListadoComponent {
   heroes: string[] = ['Spiderman', 'ironman', 'Hulk', 'Capitan America'];
+  saveHero: string | undefined = '';
   deleteList(): void {
-    this.heroes = [];
+    const save = this.heroes.pop();
+    this.saveHero = save;
   }
 }
