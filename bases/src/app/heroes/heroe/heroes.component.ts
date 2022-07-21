@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-heroes',
-  template: ``,
+  selector: 'app-heroe',
+  template: `<h1>Hola munde</h1>`,
 })
-export class Heroes {}
+export class HeroeComponent {}
