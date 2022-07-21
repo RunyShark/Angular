@@ -9,7 +9,17 @@ export class HeroeComponent {
   age: number = 23;
   superPower: string = 'Genio';
 
+  get nameCapitalized(): string {
+    return this.name.toUpperCase();
+  }
+
   greeting(): string {
     return ` Hola ${this.name} `;
+  }
+  changeName(): void {
+    this.name = 'Spiderman';
+  }
+  changeAge(): void {
+    this.age = 19;
   }
 }
