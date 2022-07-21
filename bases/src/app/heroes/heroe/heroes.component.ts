@@ -4,4 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-heroe',
   templateUrl: 'heroe.component.html',
 })
-export class HeroeComponent {}
+export class HeroeComponent {
+  name: string = 'Ironman';
+  age: number = 23;
+  superPower: string = 'Genio';
+}
