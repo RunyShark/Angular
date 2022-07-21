@@ -22,4 +22,8 @@ export class HeroeComponent {
   changeAge(): void {
     this.age = 19;
   }
+
+  changePower(): void {
+    this.superPower = 'Hombre Araña';
+  }
 }
