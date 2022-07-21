@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ContadorComonent } from './contador/contador.component';
+import { Heroes, ContadorComonent, AppComponent } from './index/index';
 
 @NgModule({
   declarations: [AppComponent, ContadorComonent],
