@@ -5,8 +5,9 @@
   <div class="col">
     <h3>Personas</h3>
     <ul>
-      <li>Krilin - 700</li>
-      <li>koku - 900</li>
+      <li *ngFor="let chara of character; let i = index">
+        {{ i + 1 }} nombre{{ chara.name }} power{{ chara.power }}
+      </li>
     </ul>
   </div>
 
@@ -15,8 +16,20 @@
     <hr />
 
     <form (ngSubmit)="addNewCharacter()">
-      <input type="text" placeholder="Nombre" />
-      <input type="number" placeholder="Poder" />
+      <input
+        type="text"
+        placeholder="Nombre"
+        [value]="newCharacter.name"
+        name="name"
+        [(ngModel)]="newCharacter.name"
+      />
+      <input
+        type="number"
+        placeholder="Poder"
+        [value]="newCharacter.power"
+        name="power"
+        [(ngModel)]="newCharacter.power"
+      />
       <button type="submit">Agregar</button>
     </form>
   </div>
