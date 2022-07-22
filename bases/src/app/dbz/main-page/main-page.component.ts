@@ -16,4 +16,12 @@ export class MainPageComponent {
       power: 101,
     },
   ];
+  newCharacter: Character = {
+    name: '',
+    power: 0,
+  };
+
+  addNewCharacter(character: Character) {
+    this.character.push(character);
+  }
 }
