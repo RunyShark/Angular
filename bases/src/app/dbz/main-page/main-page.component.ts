@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
 })
-export class MainPageComponent implements OnInit {
-  constructor() {}
+export class MainPageComponent {
+  characters: string[] = ['Goku', 'Krilim'];
+
+  addNewCharacter() {}
 
   ngOnInit(): void {}
 }
