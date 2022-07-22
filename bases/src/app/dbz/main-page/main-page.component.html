@@ -3,34 +3,10 @@
 
 <div class="row">
   <div class="col">
-    <h3>Personas</h3>
-    <ul>
-      <li *ngFor="let chara of character; let i = index">
-        {{ i + 1 }} nombre{{ chara.name }} power{{ chara.power }}
-      </li>
-    </ul>
+    <app-import-character [character]="character"></app-import-character>
   </div>
 
   <div class="col">
-    <h3>Agregar</h3>
-    <hr />
-
-    <form (ngSubmit)="addNewCharacter()">
-      <input
-        type="text"
-        placeholder="Nombre"
-        [value]="newCharacter.name"
-        name="name"
-        [(ngModel)]="newCharacter.name"
-      />
-      <input
-        type="number"
-        placeholder="Poder"
-        [value]="newCharacter.power"
-        name="power"
-        [(ngModel)]="newCharacter.power"
-      />
-      <button type="submit">Agregar</button>
-    </form>
+    <app-form-character [character]="character"></app-form-character>
   </div>
 </div>
